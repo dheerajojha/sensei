@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4.3rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  color: rgb(48, 48, 211);
+}
+
+p {
+  font-size: 1rem;
+}
+
+.cta {
+  padding: 0.8rem 1.8rem;
+  background: rgb(48, 48, 211);
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #fff;
+  transition: 0.5s ease-out;
+}
+.cta:hover {
+  background: rgb(66, 66, 132);
+}
+
+.col-lg-4,
+.col-lg-3 {
+  margin-bottom: 1rem;
+}
+
+.about-wrapper,
+.services-wrapper,
+.services-card,
+.portfolio-wrapper,
+.team-wrapper,
+.contact-form,
+.contact-map,
+.career-wrapper,
+footer {
+  padding: 80px 0;
+}
+
+.dark-mode {
+  background: #000;
+  color: #fff;
+  transition: 0.5s ease-out;
+}
+
+.heading {
+  display: grid;
+  place-items: center;
+  height: 45vh;
+  color: #fff;
+}
+
+.service-card,
+.portfolio-card,
+.counter-card,
+.feedback-card,
+.portfolio-inner-card {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+header {
+  background: rgb(48, 48, 211);
+}
+header a {
+  color: #fff !important;
+}
+header .fa-sun {
+  cursor: pointer;
+  margin-top: 0.7rem;
+}
+header .dropdown-menu {
+  background: rgb(48, 48, 211);
+}
+
+.home-wrapper .carousel-inner .carousel-item img {
+  height: 43rem;
+  max-height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+}
+.home-wrapper .carousel-inner .carousel-item .carousel-caption h2 {
+  margin-top: -24rem;
+}
+
+.services-wrapper .service-card .fa,
+.services-wrapper .service-card .fa-regular {
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+.services-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("/images/services/pic1.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.portfolio-wrapper .portfolio-card {
+  position: relative;
+  margin-bottom: 6rem;
+}
+.portfolio-wrapper .portfolio-card .portfolio-inner-card {
+  width: 450px;
+  max-width: 100%;
+  border-radius: 4px;
+  position: absolute;
+  top: 85%;
+  left: 0;
+  z-index: 1;
+  background: #fff;
+  color: #000;
+  transition: 0.5s ease-out;
+}
+.portfolio-wrapper .portfolio-card .portfolio-inner-card:hover {
+  width: 100%;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  cursor: pointer;
+}
+
+.feedback-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/feedback/feed.jpg");
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+.feedback-wrapper .feedback-container {
+  width: 400px;
+  max-width: 100%;
+}
+.feedback-wrapper .feedback-container .feedback-card {
+  background: #fff;
+  color: #000;
+  padding: 1rem;
+}
+.feedback-wrapper .feedback-container .feedback-card img {
+  width: 70px;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.counter-wrapper .counter-card {
+  margin-top: -8rem;
+  background: #fff;
+  transition: 0.5s ease-out;
+  color: #000;
+}
+.counter-wrapper .counter-card:hover {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.team-wrapper .team-card {
+  border: 1px solid gray;
+}
+.team-wrapper .team-card img {
+  transition: 0.5s ease-out;
+}
+.team-wrapper .team-card img:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+footer {
+  background: rgb(48, 48, 211);
+  color: #fff;
+}
+footer .footer-link a {
+  color: #fff;
+  line-height: 2rem;
+}
+
+.contact-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("/images/services/services_bg.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.career-detail .career-text p:nth-of-type(odd) {
+  font-style: italic;
+  background: rgb(66, 66, 132);
+  padding: 0.5rem;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

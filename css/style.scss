@@ -1,0 +1,271 @@
+//<-- =========================================scss===================================-->
+
+$big_font: 4.3rem;
+$medium_font: 3.5rem;
+$small_font: 2.5rem;
+$smaller_font: 1rem;
+$primary_color: rgb(48, 48, 211);
+$secondry_color: rgb(66, 66, 132);
+$text_color: #fff;
+$bg_color: #000;
+$shadow: 0 1rem 3rem rgba($bg_color, 0.175);
+$effect: 0.5s ease-out;
+
+@mixin bg {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+@mixin bg2 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
+  // border: 1px solid red;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: $big_font;
+}
+h2 {
+  font-size: $medium_font;
+}
+h3 {
+  font-size: $small_font;
+}
+h5 {
+  color: $primary_color;
+}
+p {
+  font-size: $smaller_font;
+}
+
+.cta {
+  padding: 0.8rem 1.8rem;
+  background: $primary_color;
+  color: $text_color;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid $text_color;
+  transition: $effect;
+  &:hover {
+    background: $secondry_color;
+  }
+}
+
+.col-lg-4,
+.col-lg-3 {
+  margin-bottom: 1rem;
+}
+.about-wrapper,
+.services-wrapper,
+.services-card,
+.portfolio-wrapper,
+.team-wrapper,
+.contact-form,
+.contact-map,
+.career-wrapper,
+footer {
+  padding: 80px 0;
+}
+
+.dark-mode {
+  background: $bg_color;
+  color: $text_color;
+  transition: $effect;
+}
+
+.heading {
+  display: grid;
+  place-items: center;
+  height: 45vh;
+  color: $text_color;
+}
+.service-card,
+.portfolio-card,
+.counter-card,
+.feedback-card,
+.portfolio-inner-card {
+  box-shadow: $shadow;
+}
+
+//<-- =========================================header start===================================-->
+header {
+  background: $primary_color;
+  a {
+    color: $text_color !important;
+  }
+  .fa-sun {
+    cursor: pointer;
+    margin-top: 0.7rem;
+  }
+  .dropdown-menu {
+    background: $primary_color;
+  }
+}
+//<-- =========================================home start===================================-->
+.home-wrapper {
+  .carousel-inner {
+    .carousel-item {
+      img {
+        height: 43rem;
+        max-height: 100%;
+        width: 100%;
+        filter: brightness(50%);
+      }
+      .carousel-caption {
+        h2 {
+          margin-top: -24rem;
+        }
+      }
+    }
+  }
+}
+
+//<-- =========================================Services start===================================-->
+
+.services-wrapper {
+  .service-card {
+    .fa,
+    .fa-regular {
+      font-size: 5rem;
+      padding: 1rem;
+    }
+  }
+}
+.services-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url("/images/services/pic1.webp");
+  @include bg2;
+}
+//<-- =========================================Portfolio start===================================-->
+
+.portfolio-wrapper {
+  .portfolio-card {
+    position: relative;
+    margin-bottom: 6rem;
+    .portfolio-inner-card {
+      width: 450px;
+      max-width: 100%;
+      border-radius: 4px;
+      position: absolute;
+      top: 85%;
+      left: 0;
+      z-index: 1;
+      background: $text_color;
+      color: $bg_color;
+      transition: $effect;
+      &:hover {
+        width: 100%;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//<-- =========================================feedback start===================================-->
+.feedback-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/feedback/feed.jpg");
+  display: grid;
+  place-items: center;
+  @include bg;
+  .feedback-container {
+    width: 400px;
+    max-width: 100%;
+    .feedback-card {
+      background: $text_color;
+      color: $bg_color;
+      padding: 1rem;
+
+      img {
+        width: 70px;
+        border-radius: 50%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+//<-- =========================================counter start===================================-->
+.counter-wrapper {
+  .counter-card {
+    margin-top: -8rem;
+    background: $text_color;
+    transition: $effect;
+    color: $bg_color;
+    &:hover {
+      margin-top: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+//<-- =========================================team start===================================-->
+.team-wrapper {
+  .team-card {
+    border: 1px solid gray;
+    img {
+      transition: $effect;
+      &:hover {
+        transform: scale(0.9);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//<-- =========================================footer start===================================-->
+footer {
+  background: $primary_color;
+  color: $text_color;
+  .footer-link {
+    a {
+      color: $text_color;
+      line-height: 2rem;
+    }
+  }
+}
+
+//<-- =========================================contact start===================================-->
+
+.contact-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url("/images/services/services_bg.webp");
+  @include bg2;
+}
+
+//<-- =========================================career start===================================-->
+
+.career-detail {
+  .career-text {
+    p {
+      &:nth-of-type(odd) {
+        font-style: italic;
+        background: $secondry_color;
+        padding: 0.5rem;
+        color: $text_color;
+      }
+    }
+  }
+}
