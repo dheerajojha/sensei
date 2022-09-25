@@ -152,7 +152,7 @@ header {
 }
 .services-home {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url("/images/services/pic1.webp");
+    url("images/services/pic1.webp");
   @include bg2;
 }
 //<-- =========================================Portfolio start===================================-->
@@ -186,7 +186,7 @@ header {
 //<-- =========================================feedback start===================================-->
 .feedback-wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/images/feedback/feed.jpg");
+    url("images/feedback/feed.jpg");
   display: grid;
   place-items: center;
   @include bg;
@@ -251,7 +251,7 @@ footer {
 
 .contact-home {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url("/images/services/services_bg.webp");
+    url("images/services/services_bg.webp");
   @include bg2;
 }
 
